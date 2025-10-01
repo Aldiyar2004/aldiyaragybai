@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-</head>
-<body> 
-    <h1>Agybai Aldiyar</h1>
-    <h2>Group: SE-2401</h2>
-    <h3>About Me:</h3>
-    <p>Hello! My name is Aldiyar, I am a student at Agybai, and I enjoy learning web development.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldiyar's Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="gallery images/Barca.jpg" alt="logo" />
+        Legends of Barcelona
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#layout">Layout</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section id="home" class="section">
+      <h2>FOOTBALL PLAYERS</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="cards/Messi.jpg" alt="Messi" />
+          <h3>Lionel Messi</h3>
+          <p>Lionel Messi is an Argentine professional footballer, widely regarded as one of the greatest players of all time. Known for his dribbling, vision, passing, and incredible goal-scoring, he has won multiple Ballon d’Or awards, Champions League titles, and the 2022 FIFA World Cup with Argentina.</p>
+          <button
+            onclick="window.location.href='https://www.transfermarkt.world/lionel-messi/profil/spieler/28003'"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="card">
+          <img src="cards/Lamin.jpg" alt="Yamal" />
+          <h3>Lamin Yamal</h3>
+          <p>Lamine Yamal is a Spanish football prodigy, known for his speed, skill, and creativity. At just 16, he became the youngest player to debut and score for Spain.</p>
+          <button
+            onclick="window.location.href='https://www.transfermarkt.world/lamine-yamal/profil/spieler/937958'"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="card">
+          <img src="cards/Raphinha.jpg" alt="Raphinha" />
+          <h3>Raphinha</h3>
+          <p>Raphinha is a Brazilian winger who plays for Barcelona and the Brazil national team. He’s known for his pace, flair, and strong left foot, often creating chances and scoring from the wing.</p>
+          <button
+            onclick="window.location.href='https://www.transfermarkt.world/raphinha/profil/spieler/411295'"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
 
-    <h3>My Hobbies</h3>
-    <ol>
-        <li>Reading</li>
-        <li>Playing football</li>
-        <li>Traveling</li>
-    </ol>
+    <section id="layout" class="section">
+      <h2>Page Layout with Grid</h2>
+      <div class="grid-layout">
+        <header class="grid-header">Header</header>
+        <aside class="grid-sidebar">Sidebar</aside>
+        <main class="grid-main">Main Content</main>
+        <footer class="grid-footer">Footer</footer>
+      </div>
+    </section>
 
-<h3>My Favorite Websites</h3>
-<ul>
-    <li><a href="https://www.jomashop.com" target="_blank">Jomashop</a></li>
-    <li><a href="https://www.amocrm.com" target="_blank">amoCRM</a></li>
-    <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-</ul>
-
-
-    <h3>My Photo</h3>
-    <img src="79.jpg" alt="My Photo" width="200">
-
-
-    <button>Click Me</button>
-
-
-    <h3>My Weekly Class Schedule</h3>
-<table border="1" cellpadding="5">
-    <tr>
-        <th>Day</th>
-        <th>Subject</th>
-        <th>Time</th>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>Design and Analysis</td>
-        <td>14:00 - 15:50</td>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>Intro to Finance</td>
-        <td>17:00 - 18:50</td>
-    </tr>
-    <tr>
-        <td>Tuesday</td>
-        <td>Russian Language</td>
-        <td>14:00 - 15:50</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>Design and Analysis (Practice)</td>
-        <td>14:00 - 15:50</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>Web Technology</td>
-        <td>16:00 - 17:50</td>
-    </tr>
-</table>
-
-<p>Today I feel 🦄, sometimes like 🐙, and a little bit 🥸.</p>
-
-    <h3>Contact Me</h3>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="color">Favorite Color:</label>
-        <input type="color" id="color" name="color"><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-
-</body>
+    <section id="gallery" class="section">
+      <h2>Image Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="gallery images/qwe.jpg" /><span>Trophey</span>
+        </div>
+        <div class="gallery-item">
+          <img src="gallery images/Mes.jpg" /><span>World Cup</span>
+        </div>
+        <div class="gallery-item">
+          <img src="gallery images/asd.jpg" /><span>Champions League</span>
+        </div>
+        <div class="gallery-item">
+          <img src="gallery images/kk.jpg" /><span>La liga Trophey</span>
+        </div>
+        <div class="gallery-item">
+          <img src="gallery images/Camp.jpg" /><span>Camp Nou</span>
+        </div>
+        <div class="gallery-item">
+          <img src="gallery images/Ney.jpg" /><span>NEYMAR</span>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <p>© 2025 My Project. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
